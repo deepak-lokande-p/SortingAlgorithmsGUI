@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAA Project Application</title>
+
+    <!--Using UI Template from QuixLab -->
+    <!-- Favicon icon -->
+    <!-- Custom Stylesheet -->
+    <link href="Content/Template Css/darkula.css" rel="stylesheet" />
+    <link href="Content/Template Css/style.css" rel="stylesheet" />
+    <link href="Content/icons/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
+    <link href="Content/icons/material-design-iconic-font/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="Content/icons/metisMenu.min.css" rel="stylesheet" />
+    <!--Using UI Template from QuixLab -->
+    <style>
+        .page-titles .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+            content: "\e606";
+            font-family: 'simple-line-icons';
+            font-size: 10px;
+            color: #555555;
+        }
+
+        .mdi-magnify:before {
+            content: "\F349";
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="Index.html">
+                    <b class="logo-abbr">
+                        <h4 style="color:#ffffff">DAA</h4>
+                    </b>
+                    <!--<span class="logo-compact">
+                        <img src="Images/logo-compact.png" alt="">
+                    </span>-->
+                    <span class="brand-title">
+                        <h3 style="color:#ffffff">DAA Application</h3>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <div class="drop-down   d-md-none">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown d-none d-md-flex">
+                            <a href="javascript:void(0)" class="log-user" data-toggle="dropdown">
+                                <span>Deepak Prakash Lokande</span>
+                            </a>
+                        </li>
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="Images/avatar/myAvatar.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile   dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Deepak</span></a>
+                                        </li>
+                                        <li>
+                                            <span>1001903014</span>
+                                        </li>
+
+                                        <hr class="my-2">
+                                        <li>
+                                            <span>DAA Project 1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="nk-sidebar">
+
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Dashboard</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li>
+                                <a href="Index.html">Home</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Algorithms</li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i> <span class="nav-text">Sorting Algorithms</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="MergeSort.html">Merge Sort</a></li>
+                            <li><a href="HeapSort.html">Heap Sort</a></li>
+                            <li><a href="RegularQuickSort.html">Regular Quick Sort</a></li>
+                            <li><a href="SplQuickSort.html">3 Median Quick Sort</a></li>
+                            <li><a href="InsertionSort.html">Insertion Sort</a></li>
+                            <li><a href="SelectionSort.html">Selection Sort</a></li>
+                            <li><a href="BubbleSort.html">Bubble Sort</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i> <span class="nav-text">Searching Algorithms</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="LinearSearch.html">Linear Search</a></li>
+                            <li><a href="BinarySearch.html">Binary Search</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-body">
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Sorting Algorithms</li>
+                        <li class="breadcrumb-item active">Selection Sort</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p style="font-weight:bold">Selection Sort: </p>
+                                <hr />
+                                <p>Input the Elements:</p>
+                                <div class="form-group">
+                                    <textarea class="form-control" style="resize: none;" name="textarea" id="textarea" cols="30" rows="2"
+                                              oninput="this.value = this.value.replace(/[^0-9,]/g, '').replace(/(\..*)\./g, '$1');"
+                                              placeholder="Enter Comma Separated Numbers"></textarea>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-primary px-3 ml-0" id="noSubmit">Submit</button>
+                                    <button class="btn btn-primary px-3 ml-3" id="clearVal">Clear</button>
+                                </div>
+                                <div style="margin-top:15px">
+                                    <p style="font-weight:bold">Entered Numbers:</p>
+                                    <p id="inputNos"></p>
+                                </div>
+                                <hr />
+                                <p>Sort the Elements using Selection Sort</p>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-primary px-3 ml-0" id="selectionSort">Sort</button>
+                                </div>
+
+                                <hr />
+                                <p>Result:</p>
+                                <p>The Execution time is: <span id="performance"></span></p>
+                                <span id="errMssg"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="copyright">
+
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/Template Scripts/common.min.js"></script>
+    <script src="Scripts/Template Scripts/custom.min.js"></script>
+    <script src="Scripts/Template Scripts/settings.js"></script>
+    <script src="Scripts/Template Scripts/styleSwitcher.js"></script>
+    <script src="Scripts/Template Scripts/highlight.pack.min.js"></script>
+    <script src="Scripts/Template Scripts/bootstrap-select.min.js"></script>
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+        (function ($) {
+            "use strict"
+
+            new quixSettings({
+                version: "light", //2 options "light" and "dark"
+                layout: "vertical", //2 options, "vertical" and "horizontal"
+                navheaderBg: "color_1", //have 10 options, "color_1" to "color_10"
+                headerBg: "color_1", //have 10 options, "color_1" to "color_10"
+                sidebarStyle: "full", //defines how sidebar should look like, options are: "full", "compact", "mini" and "overlay". If layout is "horizontal", sidebarStyle won't take "overlay" argument anymore, this will turn into "full" automatically!
+                sidebarBg: "color_1", //have 10 options, "color_1" to "color_10"
+                sidebarPosition: "static", //have two options, "static" and "fixed"
+                headerPosition: "fixed", //have two options, "static" and "fixed"
+                containerLayout: "wide",  //"boxed" and  "wide". If layout "vertical" and containerLayout "boxed", sidebarStyle will automatically turn into "overlay".
+                direction: "ltr" //"ltr" = Left to Right; "rtl" = Right to Left
+            });
+
+
+        })(jQuery);
+    </script>
+</body>
+</html>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $(document).on("wheel", "input[type=number]", function (e) {
+        $(this).blur();
+    });
+
+    $('#noSubmit').on('click', function () {
+        //alert();
+        //debugger;
+        $('#inputNos').empty();
+        var textareaVal = $('#textarea').val();
+        if (textareaVal == "") {
+            alert("Input a Number")
+        }
+        else {
+            $('#inputNos').append(textareaVal)
+        }
+    })
+    $('#clearVal').on('click', function () {
+        //debugger;
+        $('#textarea').val("");
+        $('#inputNos').empty();
+        $('#searchElement').val("");
+        $('#errMssg').empty();
+        $('#performance').empty();
+    })
+
+    /*Selection Sort Algorithm Based on Click Function*/
+    $('#selectionSort').on('click', function () {
+        debugger;
+        $('#errMssg').empty()
+        $('#performance').empty();
+        var textareaVal = $('#textarea').val();
+        var listData = new Array();
+        listData = textareaVal.split(',').map(Number);
+
+        /*Selection Sort Algorithm*/
+        var t0 = performance.now()
+        var result = "";
+        var n = listData.length;
+        for (var i = 0; i < n - 1; i++) {
+            // Find the minimum element in unsorted array
+            var min = i;
+            for (var j = i + 1; j < n; j++) {
+                if (listData[j] < listData[min])
+                    min = j;
+            }
+            // Swap the found minimum element with the first
+            // element
+            var temp = listData[min];
+            listData[min] = listData[i];
+            listData[i] = temp;
+        }
+        var t1 = performance.now()
+        if (result == -1) {
+            $('#errMssg').text("**Element is not present in array").css("color", "#ff3333")
+        }
+        else {
+            $('#errMssg').append("<br />" + 'Element found is: ')
+            $('#errMssg').append(
+                $('<div/>')
+                    .attr("id", "newDiv" + i)
+                    .addClass("btn mb-1 btn-outline-info")
+                    .append("<span/>")
+                    .text(listData)
+            );
+            $('#performance').append(t1 - t0);
+        }
+    })
+</script>
